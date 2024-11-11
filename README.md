@@ -30,3 +30,6 @@ ft_strlcpy
 ft_strlcat
   null destination will segfault, but if size is 0 it doesnt even check it
   check what happens if null terminator not within size (if not found, return size+srclen)
+
+ft_toupper tolower
+  eazy peazy just read the man
