@@ -18,9 +18,11 @@ ft_bzero
 
 ft_memcpy
   if either ptr is NULL it should segfault. memcpy also checks for size 0 before accessing any memory
+  See what happens if there's a null terminator in the middle
 
 ft_memmove
   check for overlaps obviously, otherwise memcpy with additional functionality
+  See what happens if there's a null terminator in the middle
 
 ft_strlcpy
   null inputs will segfault, but if size is 0 it doesnt even check them
@@ -36,3 +38,18 @@ ft_toupper tolower
   
 ft_strchr
   if string is NULL, segfault. make sure to check for c = nul terminator
+
+ft_strrchr
+  same
+  
+ft_strncmp
+  n == 0 will not try to read null inputs, so no segfault
+
+ft_memchr
+  See what happens if there's a null terminator in the middle
+
+ft_memcmp
+  See what happens if there's a null terminator in the middle
+
+ft_strnstr
+  
