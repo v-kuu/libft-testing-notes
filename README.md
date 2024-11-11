@@ -26,7 +26,7 @@
 
 **ft_memcpy**
 - If either pointer is NULL it should segfault. Memcpy also checks for size 0 before accessing any memory  
-- See what happens if there's a null terminator in the middle
+- See what happens if there's a null terminator in the middle (and other types)
 
   
 
@@ -71,12 +71,12 @@
   
 
 **ft_memchr**
-- See what happens if there's a null terminator in the middle
+- See what happens if there's a null terminator in the middle (and other types)
 
   
 
 **ft_memcmp**
-- See what happens if there's a null terminator in the middle
+- See what happens if there's a null terminator in the middle (and other types)
 
   
 
@@ -86,11 +86,11 @@
   
 
 **ft_atoi**
-- If you want to imitate the original atoi to the t, long_min <= will return 0 and long_max >= will return 1. Very very very debatable. Have fun.
+- If you want to imitate the original atoi to the t, long_min <= will return 0 and long_max >= will return 1. Very very very debatable. Have fun
 
 
 **ft_calloc**
-- Overflow is extremely difficult to test and observe. The check is still easy to implement.
+- Overflow is extremely difficult to test and observe. The check is still easy to implement
 - The only times calloc actually returns null is on error. Otherwise even with 0 sizes you still get back a freeable pointer
 
 
@@ -118,4 +118,9 @@
 
 
 **ft_split**
+- Check that the function works with multiple delimiter characters next to each other
+- If allocation fails, EVERYTHING you've allocated up to that point has to be freed
+- Check for NULL input if you want
+
+**ft_itoa**
 - 
