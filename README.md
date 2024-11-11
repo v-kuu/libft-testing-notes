@@ -14,10 +14,10 @@ ft_memset
   check with other types! for example int arrays
 
 ft_bzero
-  memset with 0
+  It's just memset with 0
 
 ft_memcpy
-  if either ptr is NULL it should segfault. memcpy also checks for size 0 before accessing any memory
+  if either pointer is NULL it should segfault. memcpy also checks for size 0 before accessing any memory
   See what happens if there's a null terminator in the middle
 
 ft_memmove
@@ -52,5 +52,5 @@ ft_memcmp
   See what happens if there's a null terminator in the middle
 
 ft_strnstr
-  If little is longer than big the original function crashes ?
-
+  size == 0 is not first check, big can be null but small can't be even with size 0
+  Big only gets deferenced when size != 0, small gets deference always
