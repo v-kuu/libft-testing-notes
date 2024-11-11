@@ -28,5 +28,5 @@ ft_strlcpy
   you can use the return value as inteded to see if you actually copied the thing completely
 
 ft_strlcat
-  null input will segfault, but if size is 0 it doesnt even check them
-  check what happens if null terminator not within size
+  null destination will segfault, but if size is 0 it doesnt even check it
+  check what happens if null terminator not within size (if not found, return size+srclen)
