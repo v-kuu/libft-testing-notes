@@ -90,7 +90,7 @@
 
 
 **ft_calloc**
-- Overflow is extremely difficult to test and observe. The check is still easy to implement
+- Overflow is extremely difficult to test and observe. The check is still easy to implement. Just don't divide by 0
 - The only times calloc actually returns null is on error. Otherwise even with 0 sizes you still get back a freeable pointer
 
 
