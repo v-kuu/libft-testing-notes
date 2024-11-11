@@ -122,5 +122,36 @@
 - If allocation fails, EVERYTHING you've allocated up to that point has to be freed
 - Check for NULL input if you want
 
+
 **ft_itoa**
-- 
+- Test that even edge case outputs are malloced and freeable
+- Sign flipping int overflow
+
+
+**ft_strmapi**
+- Check for NULL input if you want
+
+
+**ft_striteri**
+- Check for NULL input if you want
+
+
+**ft_putchar_fd**
+- Check for NULL input if you want
+
+
+**ft_putstr_fd**
+- Check for NULL input if you want
+
+
+**ft_putendl_fd**
+- Check for NULL input if you want
+
+
+**ft_putnbr_fd**
+- Sign flip overflow
+
+
+## BONUS
+
+- Check for NULL input where applicable if you want :)
