@@ -52,4 +52,5 @@ ft_memcmp
   See what happens if there's a null terminator in the middle
 
 ft_strnstr
-  
+  If little is longer than big the original function crashes ?
+
