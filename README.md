@@ -46,7 +46,7 @@
 **ft_strlcat**
 - Null destination will segfault, but if size is 0 it doesnt even check it
 - Null source will always segfault
-- check what happens if null terminator not within size (if not found, return size+srclen)
+- Check what happens if null terminator not within size (if not found, return size+srclen)
 
   
 
@@ -108,4 +108,14 @@
 
 **ft_strjoin**
 - Check for NULL input if you want
+
+
+**ft_strtrim**
+- Test what happens when the string is completely made out of trim characters (should return an empty string)
+- Test what happens when a trim character is in the middle
+- Test with all kinds of basic inputs (different amounts of trim characters, different combinations of front/back)
+- Check for NULL input if you want
+
+
+**ft_split**
 - 
