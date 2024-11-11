@@ -135,4 +135,8 @@ ft_strnstr
 ft_atoi
 
 
+  If you want to imitate to the t the original atoi, long_min <= will return 0 and long_max >= will return 1. Very very very debatable. Have fun.
+
+ft_calloc
+
   
