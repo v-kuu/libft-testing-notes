@@ -1,4 +1,5 @@
 # libft-testing-notes
+Some edge cases to consider outside of normal testing.
 ## Part 1
 **ft_isx**
 - Self explanatory  
