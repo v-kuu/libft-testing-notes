@@ -1,5 +1,5 @@
 # libft-testing-notes
-
+## Part 1
 **ft_isx**
 - Self explanatory  
 - No need to segfault with insane numbers (we can't use the crazy bitwise lookup tables)
@@ -32,40 +32,41 @@
 
 **ft_memmove**
 - Check for overlaps obviously, otherwise memcpy with additional functionality  
-- See what happens if there's a null terminator in the middleqq
+- See what happens if there's a null terminator in the middle (and other types)
 
   
 
 **ft_strlcpy**
-- null inputs will segfault, but if size is 0 it doesnt even check them  
-- make sure you actually null terminate  
-- you can use the return value as inteded to see if you actually copied the thing completely
+- Null inputs will segfault, but if size is 0 it doesnt even check them  
+- Make sure you actually null terminate  
+- You can use the return value as inteded to see if you actually copied the thing completely
 
   
 
 **ft_strlcat**
-- null destination will segfault, but if size is 0 it doesnt even check it  
+- Null destination will segfault, but if size is 0 it doesnt even check it
+- Null source will always segfault
 - check what happens if null terminator not within size (if not found, return size+srclen)
 
   
 
 **ft_toupper ft_tolower**
-- eazy peazy just read the man
+- Eazy peazy just read the man
 
   
   
 **ft_strchr**
-- if string is NULL, segfault. make sure to check for c = nul terminator
+- If string is NULL, segfault. make sure to check for c == nul terminator
 
   
 
 **ft_strrchr**
-- same
+- Same
 
   
   
 **ft_strncmp**
-- n == 0 will not try to read null inputs, so no segfault
+- N == 0 will not try to read null inputs, so no segfault
 
   
 
@@ -94,4 +95,17 @@
 
 
 **ft_strdup**
+- A null pointer in the argument will segfault
 
+
+## Part 2
+
+
+**ft_substr**
+- Check if your starting index is out of bounds (return an empty string)
+- Check for NULL input if you want
+
+
+**ft_strjoin**
+- Check for NULL input if you want
+- 
