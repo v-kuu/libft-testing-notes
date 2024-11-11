@@ -10,4 +10,23 @@ ft_strlen
 
 ft_memset
   if you give memset null ptr with size 0 it doesn't segfault (size 0 is instant return)
+  if size != 0 and you give it nullptr it should segfault
   check with other types! for example int arrays
+
+ft_bzero
+  memset with 0
+
+ft_memcpy
+  if either ptr is NULL it should segfault. memcpy also checks for size 0 before accessing any memory
+
+ft_memmove
+  check for overlaps obviously, otherwise memcpy with additional functionality
+
+ft_strlcpy
+  null inputs will segfault, but if size is 0 it doesnt even check them
+  make sure you actually null terminate
+  you can use the return value as inteded to see if you actually copied the thing completely
+
+ft_strlcat
+  null input will segfault, but if size is 0 it doesnt even check them
+  check what happens if null terminator not within size
