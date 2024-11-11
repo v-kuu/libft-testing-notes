@@ -33,3 +33,6 @@ ft_strlcat
 
 ft_toupper tolower
   eazy peazy just read the man
+  
+ft_strchr
+  if string is NULL, segfault. make sure to check for c = nul terminator
