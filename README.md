@@ -38,7 +38,8 @@ Some edge cases to consider outside of normal testing.
   
 
 **ft_strlcpy**
-- Null inputs will segfault, but if size is 0 it doesnt even check them  
+- Null inputs will segfault, but if size is 0 it doesnt even check them
+- Null source will always segfault
 - Make sure you actually null terminate  
 - You can use the return value as inteded to see if you actually copied the thing completely
 
